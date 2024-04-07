@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="asyncquery.js"></script>
+        <title></title>
+        <script>
+			
+			async function godothings()
+			{
+				document.getElementById('crap').innerHTML = JSON.stringify(await fetchJSONData('POST','test.html',{})); 
+			}
+           
+        </script>
+    </head>
+    <body id='crap' onload='godothings()'> 
+    </body>
+</html>
